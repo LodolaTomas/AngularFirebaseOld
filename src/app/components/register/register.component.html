@@ -1,0 +1,12 @@
+<h1><strong>Registrar</strong></h1>
+<form [formGroup]="registerForm" (ngSubmit)="registrar()">
+    <div>
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email"  formControlName="email" id="exampleInputEmail1"  placeholder="Enter email">
+    </div>
+    <div>
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" formControlName="password" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <button type="submit">Submit</button>
+</form>
